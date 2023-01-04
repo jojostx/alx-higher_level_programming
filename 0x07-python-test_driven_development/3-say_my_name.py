@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module is composed of a function that prints 'My name is <first name> <last name>'
+This module is composed of a function that
+prints 'My name is <first name> <last name>'
 """
 
 

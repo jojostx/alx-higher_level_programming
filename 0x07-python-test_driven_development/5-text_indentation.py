@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module is composed of a function that prints a text 
+This module is composed of a function that prints a text
 with 2 new lines after each of these characters: '.', '?' and ':'
 
 """
@@ -20,7 +20,7 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    """ iterate through string, 
+    """ iterate through string,
         and print each character
         if the current character is '.', '?' or ':'
             print the character followed by two newlines
@@ -33,6 +33,6 @@ def text_indentation(text):
         s = ""
         for i in list_text:
             i = i.strip(" ")
-            s = i + d if s is "" else s + "\n\n" + i + d
+            s = i + d if s == "" else s + "\n\n" + i + d
 
     print(s[:-3], end="")

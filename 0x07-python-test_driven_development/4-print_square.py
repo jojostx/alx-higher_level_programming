@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This module is composed of a function that prints a square with the character '#'
+This module is composed of a function that
+prints a square with the character '#'
 """
 
 

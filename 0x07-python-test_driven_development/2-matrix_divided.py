@@ -22,14 +22,16 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if not matrix or not isinstance(matrix, list):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(
+                "matrix must be a matrix (list of lists) of integers/floats")
 
     inner_len = -1
     new_m = matrix.copy()
 
     for inner_m in new_m:
         if not inner_m or not isinstance(inner_m, list):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(
+                "matrix must be a matrix (list of lists) of integers/floats")
 
         for i, n in enumerate(inner_m):
             m_len = len(inner_m)
@@ -43,7 +45,8 @@ def matrix_divided(matrix, div):
 
             if type(n) not in [int, float]:
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                    ('matrix must be a matrix '
+                        '(list of lists) of integers/floats'))
 
             # divide and replace
             inner_m[i] = round(n / div, 2)
