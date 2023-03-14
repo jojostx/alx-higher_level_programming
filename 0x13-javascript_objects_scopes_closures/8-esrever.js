@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
 exports.esrever = function (list) {
-	let tmp = [];
+  const tmp = [];
 
-	list.forEach(el => {
-		tmp.unshift(el);
-	});
+  list.forEach(el => {
+    tmp.unshift(el);
+  });
 
-	return tmp;
-}
+  return tmp;
+};
